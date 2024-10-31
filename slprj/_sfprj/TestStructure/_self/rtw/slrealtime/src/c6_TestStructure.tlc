@@ -1,0 +1,145 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   17 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_c6_TestStructure"\
+      Description  "StateActiveChild"\
+      SFName       "is_c6_TestStructure"\
+      Path         "is_c6_TestStructure"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_Stop"\
+      Description  "StateActiveChild"\
+      SFName       "is_Stop"\
+      Path         "Stop.is_Stop"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LowerLimb_Follow"\
+      Description  "StateActiveChild"\
+      SFName       "is_LowerLimb_Follow"\
+      Path         "Stop.LowerLimb_Follow.is_LowerLimb_Follow"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LowerLimb_FlutterKick"\
+      Description  "StateActiveChild"\
+      SFName       "is_LowerLimb_FlutterKick"\
+      Path         "Stop.LowerLimb_FlutterKick.is_LowerLimb_FlutterKick"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LowerLimb_Breaststroke"\
+      Description  "StateActiveChild"\
+      SFName       "is_LowerLimb_Breaststroke"\
+      Path         "Stop.LowerLimb_Breaststroke.is_LowerLimb_Breaststroke"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LowerLimb_Walk"\
+      Description  "StateActiveChild"\
+      SFName       "is_LowerLimb_Walk"\
+      Path         "Stop.LowerLimb_Walk.is_LowerLimb_Walk"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_Start"\
+      Description  "StateActiveChild"\
+      SFName       "is_Start"\
+      Path         "Start.is_Start"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "Pause_StartButtonPressed_temp"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Pause_StartButtonPressed_temp"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Manual_AutoButtonPressed_temp"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Manual_AutoButtonPressed_temp"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "PatternButtonPressed_temp"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "PatternButtonPressed_temp"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Unlock_LockButtonPressed_temp"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Unlock_LockButtonPressed_temp"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c6_TestStructure"\
+      Description  "StateIsActive"\
+      SFName       "is_active_c6_TestStructure"\
+      Path         "is_active_c6_TestStructure"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "was_Stop"\
+      Description  "StatePrevActiveChild"\
+      SFName       ""\
+      Path         "Stop"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "was_LowerLimb_Breaststroke"\
+      Description  "StatePrevActiveChild"\
+      SFName       ""\
+      Path         "Stop.LowerLimb_Breaststroke"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "was_LowerLimb_FlutterKick"\
+      Description  "StatePrevActiveChild"\
+      SFName       ""\
+      Path         "Stop.LowerLimb_FlutterKick"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "was_LowerLimb_Walk"\
+      Description  "StatePrevActiveChild"\
+      SFName       ""\
+      Path         "Stop.LowerLimb_Walk"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

@@ -1,0 +1,187 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   22 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_c7_TestStructure"\
+      Description  "StateActiveChild"\
+      SFName       "is_c7_TestStructure"\
+      Path         "is_c7_TestStructure"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_Adjust"\
+      Path         "Adjust.is_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLFK_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLFK_Adjust"\
+      Path         "Adjust.LLFK_Adjust.is_LLFK_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLFK_Freq_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLFK_Freq_Adjust"\
+      Path         "Adjust.LLFK_Adjust.LLFK_Freq_Adjust.is_LLFK_Freq_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLFK_Torque_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLFK_Torque_Adjust"\
+      Path         "Adjust.LLFK_Adjust.LLFK_Torque_Adjust.is_LLFK_Torque_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLFK_Pos_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLFK_Pos_Adjust"\
+      Path         "Adjust.LLFK_Adjust.LLFK_Pos_Adjust.is_LLFK_Pos_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLB_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLB_Adjust"\
+      Path         "Adjust.LLB_Adjust.is_LLB_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLB_Freq_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLB_Freq_Adjust"\
+      Path         "Adjust.LLB_Adjust.LLB_Freq_Adjust.is_LLB_Freq_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLB_Torque_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLB_Torque_Adjust"\
+      Path         "Adjust.LLB_Adjust.LLB_Torque_Adjust.is_LLB_Torque_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLB_Pos_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLB_Pos_Adjust"\
+      Path         "Adjust.LLB_Adjust.LLB_Pos_Adjust.is_LLB_Pos_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLW_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLW_Adjust"\
+      Path         "Adjust.LLW_Adjust.is_LLW_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLW_Freq_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLW_Freq_Adjust"\
+      Path         "Adjust.LLW_Adjust.LLW_Freq_Adjust.is_LLW_Freq_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLW_Torque_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLW_Torque_Adjust"\
+      Path         "Adjust.LLW_Adjust.LLW_Torque_Adjust.is_LLW_Torque_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLW_Pos_Adjust"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLW_Pos_Adjust"\
+      Path         "Adjust.LLW_Adjust.LLW_Pos_Adjust.is_LLW_Pos_Adjust"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "Freq_Up_temp"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Freq_Up_temp"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Freq_Down_temp"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Freq_Down_temp"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Positive_Up_temp"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Positive_Up_temp"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Negtive_Up_temp"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Negtive_Up_temp"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Positive_Down_temp"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Positive_Down_temp"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Negtive_Down_temp"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Negtive_Down_temp"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c7_TestStructure"\
+      Description  "StateIsActive"\
+      SFName       "is_active_c7_TestStructure"\
+      Path         "is_active_c7_TestStructure"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

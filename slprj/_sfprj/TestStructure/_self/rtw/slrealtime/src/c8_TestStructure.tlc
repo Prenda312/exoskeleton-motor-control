@@ -1,0 +1,73 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   7 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_c8_TestStructure"\
+      Description  "StateActiveChild"\
+      SFName       "is_c8_TestStructure"\
+      Path         "is_c8_TestStructure"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_StartTask"\
+      Description  "StateActiveChild"\
+      SFName       "is_StartTask"\
+      Path         "StartTask.is_StartTask"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLFK"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLFK"\
+      Path         "StartTask.LLFK.is_LLFK"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLB"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLB"\
+      Path         "StartTask.LLB.is_LLB"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_LLW"\
+      Description  "StateActiveChild"\
+      SFName       "is_LLW"\
+      Path         "StartTask.LLW.is_LLW"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c8_TestStructure"\
+      Description  "StateIsActive"\
+      SFName       "is_active_c8_TestStructure"\
+      Path         "is_active_c8_TestStructure"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
